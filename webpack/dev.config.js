@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack'); //to access built-in plugins
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const DownloadJsonPlugin = require('download-json-webpack-plugin');
 
 //process.traceDeprecation = true;
 
@@ -61,6 +62,10 @@ const config = {
     ]
   },
   plugins: [
+    new DownloadJsonPlugin({
+      path: 'https://lsv-data-visualizations.firebaseio.com/priorizacionDeHomicidiosLaQueEs.json',
+      filename: './src/data.json'
+    }),
     new webpack.LoaderOptionsPlugin({
       minimize: false,
       debug: true

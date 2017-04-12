@@ -3,30 +3,145 @@
   font-size: 16px;
   display: block;
 
+  .legend {
+    font-family: map(fonts, family-sans);
+    font-weight: 300;
+    font-size: .9em;
+  }
+
+  .list {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+
+    & li {
+      display: flex;
+      align-items: center;
+      //justify-content: flex-end;
+
+      span {
+        width: 2em;
+        height: 2em;
+        display: inline-block;
+        border-radius: 50%;
+        margin: .5em 1em 0 0;
+      }
+    }
+  }
+
   & .row {
     width: 100%;
-    margin: 2em auto;
+    padding: 1.25em 0 1em;
+    border-bottom: 1px solid map(colors, secondary, base);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+    /*&:hover {
+      .title {
+        opacity: 1;
+      }
+    }*/
   }
 
   & .name {
     font-family: map(fonts, family-serif);
     font-size: 1em;
     margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
   }
 
-  & .summary {
-    font-size: 1em;
-    lost-column: 1/3;
-  }
+  & .summary {;
+    margin-bottom: 0;
 
-  & .columns {
-    display: flex;
-    clear: both;
+    & p {
+      font-size: .85em;
+      margin: 0;
+    }
   }
 
   & .column {
-    background-color: red;
-    lost-column: 1/3;
+    lost-column: 2/11;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (max-width: 800px) {
+      width: 33.3333% !important;
+      margin: 0 !important;
+      text-align: center;
+    }
+
+    &__big {
+      lost-column: 5/11;
+      text-align: left;
+
+      @media screen and (max-width: 800px) {
+        width: 100% !important;
+        flex-wrap: wrap;
+      }
+    }
   }
 
+  & .statusColumn {
+    display: flex;
+    align-items: center;
+  }
+
+  & .title {
+    font-size: 1em;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+    color: map(colors, secondary, dark);
+    display: none;
+    transition: .2s;
+
+    @media screen and (max-width: 640px) {
+      font-weight: 300;
+      font-size: .8em;
+    }
+
+    @media screen and (max-width: 640px) {
+      display: block;
+    }
+  }
+
+  .heading {
+    .column {
+      align-items: flex-end;
+      flex-direction: row;
+    }
+
+    @media screen and (max-width: 640px) {
+      .column:not(.column__big) {
+        display: none;
+      }
+    }
+  }
+
+  .heading .title {
+    display: block;
+  }
+
+  & .status {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    padding: 0 .75em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    flex-shrink: 0;
+  }
+
+  & .status__1 {
+    background-color: map(colors, partidos, alianzaVerde);
+  }
+
+  & .status__2 {
+    background-color: map(colors, red, santander);
+  }
+
+  & .status__3 {
+    background-color: map(colors, red, caribe);
+  }
 }

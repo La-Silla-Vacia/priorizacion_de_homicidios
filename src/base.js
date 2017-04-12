@@ -1,30 +1,81 @@
-import { h, render } from 'preact';
+import { h, render, Component } from 'preact';
+import cx from 'classnames';
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt();
 
 import s from './base.css';
 
 const data = require('./data.json');
 
-const Base = () => (
-  <div className={s.container}>
-    <div className={s.row}>
-      <h3 className={s.name}>Reinaldo José Gerónimo González</h3>
-      <p className={s.summary}>Gerónimo Gonzáles murió en su apartamento con tres disparos. Las causas de su muerte no son claras, pues a los homosexuales del barrio los suelen enamorar para después robarlos, pero a Rey lo mataron sin robarle nada.</p>
-      <div className={s.columns}>
-        <div className={s.column}>
-          <h4 className={s.title}>Impacto</h4>
-          Hoi hoi hoi
+class Base extends Component {
+
+  getPeople() {
+    return data.map((person, index) => {
+      return (
+        <div className={s.row}>
+          <div className={cx(s.column, s.column__big)}>
+            <h3 className={s.name}>{person.nombreDeLaVictima}</h3>
+            <div className={s.summary}
+                 dangerouslySetInnerHTML={{ __html: String(md.render(person.resumenDelHomicidio)) }} />
+          </div>
+          <div className={cx(s.column, s.statusColumn)}>
+            <div className={cx(s.status, s[`status__${person.impactoColor}`])}>
+            </div>
+            <h4 className={s.title}>{ person.impalactoDescripcion }</h4>
+          </div>
+          <div className={cx(s.column, s.statusColumn)}>
+            <div className={cx(s.status, s[`status__${person.dificultadColor}`])}>
+            </div>
+            <h4 className={s.title}>{ person.dificultadDescripcion }</h4>
+          </div>
+          <div className={cx(s.column, s.statusColumn)}>
+            <div className={cx(s.status, s[`status__${person.quéTanCercaEstaDeUnaSentencia}`])}>
+            </div>
+            <h4 className={s.title} >{ person.etapaDelProcesoDescripcion }</h4>
+          </div>
         </div>
-        <div className={s.column}>
-          <h4 className={s.title}>Dificultad</h4>
-          Hoi hoi hoi
+      )
+    })
+  }
+
+  render() {
+    const people = this.getPeople();
+
+    return (
+      <div className={s.container}>
+        <div className={cx(s.row, s.heading)}>
+          <div className={cx(s.column, s.column__big)}>
+            <div className={s.legend}>
+              <ul className={s.list}>
+                <li>
+                  <span className={s.status__1} />
+                  Menos
+                </li>
+                <li>
+                  <span className={s.status__2} />
+                  Media
+                </li>
+                <li>
+                  <span className={s.status__3} />
+                  Mas
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className={cx(s.column, s.statusColumn)}>
+            <h4 className={s.title}>Impacto</h4>
+          </div>
+          <div className={cx(s.column, s.statusColumn)}>
+            <h4 className={s.title}>Dificultad</h4>
+          </div>
+          <div className={cx(s.column, s.statusColumn)}>
+            <h4 className={s.title}>Qué tan lejos está de una sentencia</h4>
+          </div>
         </div>
-        <div className={s.column}>
-          <h4 className={s.title}>Estado del proceso</h4>
-          Hoi hoi hoi
-        </div>
+        {people}
       </div>
-    </div>
-  </div>
-);
+    )
+  }
+}
 
 export default Base;
