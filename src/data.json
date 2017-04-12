@@ -1,60 +1,60 @@
 [
 	{
 		"dificultadColor": 3,
-		"dificultadDescripcion": "Alta Dificultad",
-		"etapaDelProcesoDescripcion": "Indagación",
+		"dificultadDescripcion": "Su dificultad es alta porque no hay pruebas que den una pista de quién pudo ser el asesino.",
+		"etapaDelProcesoDescripcion": "El proceso está actualmente en indagación.",
 		"impactoColor": 2,
-		"impalactoDescripcion": "Medio Impacto",
+		"impalactoDescripcion": "Su impacto es medio por qué no se sabe si Rey fue asesinado por ser homosexual.",
 		"nombreDeLaVictima": "Reinaldo José Gerónimo González",
 		"quéTanCercaEstaDeUnaSentencia": 3,
-		"resumenDelHomicidio": "Gerónimo Gonzáles murió en su apartamento con tres disparos. Las causas de su muerte no son claras, pues a los homosexuales del barrio los suelen enamorar para después robarlos, pero a Rey lo mataron sin robarle nada. \n\n[Lea la historia completa](http://lasillavacia.com/crimenycastigo/node/50)"
+		"resumenDelHomicidio": "Gerónimo González murió en su apartamento con tres disparos. Las causas de su muerte no son claras, pues a los homosexuales del barrio los suelen enamorar para después robarlos, pero a Rey lo mataron sin robarle nada. \n\n[Lea la historia completa](http://lasillavacia.com/crimenycastigo/node/50)"
 	},
 	{
 		"dificultadColor": 1,
-		"dificultadDescripcion": "Baja Dificultad",
-		"etapaDelProcesoDescripcion": "Investigación",
+		"dificultadDescripcion": "Su dificultad es baja porque capturaron al homicida al instante.",
+		"etapaDelProcesoDescripcion": "El proceso está actualmente en investigación.",
 		"impactoColor": 1,
-		"impalactoDescripcion": "Bajo Impacto",
+		"impalactoDescripcion": "Su impacto es bajo puesto que, al parecer, el homidio es producto de una riña.",
 		"nombreDeLaVictima": "Carlos Julio Ruiz Vega ",
 		"quéTanCercaEstaDeUnaSentencia": 2,
 		"resumenDelHomicidio": "Carlos Julio Ruiz Vega y Pedro José España aparecieron muertos, con disparos por la espalda, en un carro que se estrelló contra las rejas del Colegio San Viator en el norte de Bogotá. [Lea la historia completa](http://lasillavacia.com/crimenycastigo/node/51)"
 	},
 	{
 		"dificultadColor": 1,
-		"dificultadDescripcion": "Baja Dificultad",
-		"etapaDelProcesoDescripcion": "Investigación",
+		"dificultadDescripcion": "Su dificultad es baja porque capturaron al homicida al instante.",
+		"etapaDelProcesoDescripcion": "El proceso está actualmente en investigación.",
 		"impactoColor": 1,
-		"impalactoDescripcion": "Bajo Impacto",
+		"impalactoDescripcion": "Su impacto es bajo puesto que, al parecer, el homicidio es producto de una riña.",
 		"nombreDeLaVictima": "Pedro José España",
 		"quéTanCercaEstaDeUnaSentencia": 2,
 		"resumenDelHomicidio": "Carlos Julio Ruiz Vega y Pedro José España aparecieron muertos, con disparos por la espalda, en un carro que se estrelló contra las rejas del Colegio San Viator en el norte de Bogotá. [Lea la historia completa](http://lasillavacia.com/crimenycastigo/node/51)"
 	},
 	{
 		"dificultadColor": 3,
-		"dificultadDescripcion": "Alta Dificultad",
-		"etapaDelProcesoDescripcion": "Indagación",
+		"dificultadDescripcion": "Su dificultad es alta porque no hay pruebas que den una pista de quién pudo ser el asesino.",
+		"etapaDelProcesoDescripcion": "El proceso está actualmente en indagación.",
 		"impactoColor": 1,
-		"impalactoDescripcion": "Bajo Impacto",
+		"impalactoDescripcion": "Su impacto es bajo puesto que, al parecer, el homicidio es producto de una riña.",
 		"nombreDeLaVictima": "Jorge Enrique Cely",
 		"quéTanCercaEstaDeUnaSentencia": 3,
 		"resumenDelHomicidio": "A Cely lo asesinaron en su casa aparentemente para robarlo. Lo encontraron desnudo, amarrado de los pies y de las manos. [Lea la historia completa](http://lasillavacia.com/crimenycastigo/node/52)"
 	},
 	{
 		"dificultadColor": 3,
-		"dificultadDescripcion": "Alta Dificultad",
-		"etapaDelProcesoDescripcion": "Indagación",
+		"dificultadDescripcion": "Su dificultad es alta porque no hay pruebas que den una pista de quién pudo ser el asesino.",
+		"etapaDelProcesoDescripcion": "El proceso está actualmente en indagación.",
 		"impactoColor": 2,
-		"impalactoDescripcion": "Medio Impacto",
+		"impalactoDescripcion": "Su impacto es medio por qué no se sabe si Saavedra fue asesinado por un ajuste de cuentas de bandas.",
 		"nombreDeLaVictima": "Walter Emilio Saavedra Guerrero",
 		"quéTanCercaEstaDeUnaSentencia": 3,
 		"resumenDelHomicidio": "Saavedra Guerrero vivía en un cambuche en el barrio Bilbao en Suba hasta que alguien entró por su puerta y lo asesinó mientras dormía. [Lea la historia completa](http://lasillavacia.com/crimenycastigo/node/55)"
 	},
 	{
 		"dificultadColor": 1,
-		"dificultadDescripcion": "Baja Dificultad",
+		"dificultadDescripcion": "Su dificultad es baja porque capturaron al homicida al instante.",
 		"etapaDelProcesoDescripcion": "Juicio",
 		"impactoColor": 1,
-		"impalactoDescripcion": "Bajo Impacto",
+		"impalactoDescripcion": "Su impacto es bajo puesto que, al parecer, el homicidio es producto de una riña.",
 		"nombreDeLaVictima": "Carlos Adrián Martínez Valencia",
 		"quéTanCercaEstaDeUnaSentencia": 1,
 		"resumenDelHomicidio": "Carlos Adrián Martínez Valencia fue asesinado, en el apartamento de la mujer con la que salía, por Juan Carlos Sanabria, el esposo de su novia. [Lea la historia completa](http://lasillavacia.com/crimenycastigo/node/76)"

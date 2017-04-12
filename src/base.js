@@ -49,24 +49,24 @@ class Base extends Component {
               <ul className={s.list}>
                 <li>
                   <span className={s.status__1} />
-                  Menos
+                  Poco
                 </li>
                 <li>
                   <span className={s.status__2} />
-                  Media
+                  Más o menos
                 </li>
                 <li>
                   <span className={s.status__3} />
-                  Mas
+                  Muy
                 </li>
               </ul>
             </div>
           </div>
           <div className={cx(s.column, s.statusColumn)}>
-            <h4 className={s.title}>Impacto</h4>
+            <h4 className={s.title}>Qué tanto impacto tuvo</h4>
           </div>
           <div className={cx(s.column, s.statusColumn)}>
-            <h4 className={s.title}>Dificultad</h4>
+            <h4 className={s.title}>Qué tan difícil era investigarlo</h4>
           </div>
           <div className={cx(s.column, s.statusColumn)}>
             <h4 className={s.title}>Qué tan lejos está de una sentencia</h4>
