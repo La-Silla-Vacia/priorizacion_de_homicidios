@@ -15,9 +15,11 @@ lsv("priorizacion_de_homicidios", function (interactive) {
     return;
   }
 
+  console.log(interactive);
+
   //MARKUP
   render((
-    <Base />
+    <Base meta={interactive} />
   ), interactive.el);
 
 }, true); // change this last param to true if you want to skip the DOM checks

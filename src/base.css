@@ -110,6 +110,10 @@
     }
   }
 
+  &.touch .title {
+    opacity: 1;
+  }
+
   .heading {
     .column {
       align-items: flex-end;
