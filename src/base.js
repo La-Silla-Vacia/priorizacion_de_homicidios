@@ -23,12 +23,21 @@ md.renderer.rules.link_open = function (tokens, idx, options, env, self) {
 
 import s from './base.css';
 
-const data = require('./data.json');
-
 class Base extends Component {
 
+  constructor() {
+    super();
+    this.state = {
+      data: []
+    }
+  }
+
+  componentWillMount() {
+    this.fetchData();
+  }
+
   getPeople() {
-    return data.map((person, index) => {
+    return this.state.data.map((person, index) => {
       return (
         <div className={s.row}>
           <div className={cx(s.column, s.column__big)}>
@@ -53,6 +62,17 @@ class Base extends Component {
           </div>
         </div>
       )
+    })
+  }
+
+  fetchData() {
+    fetch('https://lsv-data-visualizations.firebaseio.com/priorizacionDeHomicidiosLaQueEs.json')
+      .then((response) => {
+        return response.json()
+      }).then((json) => {
+      this.setState({data: json});
+    }).catch((ex) => {
+      console.log('parsing failed', ex)
     })
   }
 

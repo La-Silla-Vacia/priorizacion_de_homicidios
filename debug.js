@@ -15,8 +15,6 @@ lsv("priorizacion_de_homicidios", function (interactive) {
     return;
   }
 
-  console.log(interactive);
-
   //MARKUP
   render((
     <Base meta={interactive} />

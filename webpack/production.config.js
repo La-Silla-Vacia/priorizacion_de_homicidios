@@ -3,7 +3,7 @@ const webpack = require('webpack'); //to access built-in plugins
 const DownloadJsonPlugin = require('download-json-webpack-plugin');
 
 const config = {
-  entry: './debug.js',
+  entry: ['whatwg-fetch', './debug.js'],
   output: {
     // path: path.resolve(__dirname, '../dist'),
     filename: './dist/script-min.js'
@@ -58,10 +58,6 @@ const config = {
     ]
   },
   plugins: [
-    new DownloadJsonPlugin({
-      path: 'https://lsv-data-visualizations.firebaseio.com/priorizacionDeHomicidiosLaQueEs.json',
-      filename: './src/data.json'
-    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true,
       debug: false
